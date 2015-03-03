@@ -32,11 +32,19 @@ public class CannonControls : CoreBehavior
 	{
 		if(Input.GetKey(GM.SettingsMG.AngleCannonUp))
 		{
-			PivotPoint.RotateAround(PivotPoint.transform.position, PivotPoint.transform.right, -AngleRotationPerSecond * Time.deltaTime);
+			PivotPoint.RotateAround(PivotPoint.transform.position, Vector3.right, -AngleRotationPerSecond * Time.deltaTime);
 		}
 		if(Input.GetKey(GM.SettingsMG.AngleCannonDown))
 		{
-			PivotPoint.RotateAround(PivotPoint.transform.position, PivotPoint.transform.right, AngleRotationPerSecond * Time.deltaTime);
+			PivotPoint.RotateAround(PivotPoint.transform.position, Vector3.right, AngleRotationPerSecond * Time.deltaTime);
+		}
+		if(Input.GetKey(GM.SettingsMG.RotateCannonLeft))
+		{
+			PivotPoint.RotateAround(PivotPoint.transform.position, Vector3.up, -AngleRotationPerSecond *Time.deltaTime);
+		}
+		if(Input.GetKey(GM.SettingsMG.RotateCannonRight))
+		{
+			PivotPoint.RotateAround(PivotPoint.transform.position, Vector3.up, AngleRotationPerSecond *Time.deltaTime);
 		}
 	}
 	

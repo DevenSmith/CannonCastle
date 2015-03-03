@@ -46,12 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\Abilities\Damageable.cs" />
      <Compile Include="Assets\Code\Base\CoreBehavior.cs" />
      <Compile Include="Assets\Code\Base\Entity.cs" />
      <Compile Include="Assets\Code\Base\EntityManager.cs" />
      <Compile Include="Assets\Code\Base\GameMaster.cs" />
      <Compile Include="Assets\Code\Base\SettingsManager.cs" />
+     <Compile Include="Assets\Code\Cannon and CannonBall\CannonBall.cs" />
      <Compile Include="Assets\Code\Cannon and CannonBall\CannonControls.cs" />
+     <Compile Include="Assets\Code\CastleCreationScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>

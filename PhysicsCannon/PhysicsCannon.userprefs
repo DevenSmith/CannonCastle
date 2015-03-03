@@ -1,11 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Cannon and CannonBall\CannonControls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\CastleCreationScript.cs">
     <Files>
-      <File FileName="Assets\Code\Cannon and CannonBall\CannonControls.cs" Line="60" Column="17" />
-      <File FileName="Assets\Code\Base\SettingsManager.cs" Line="13" Column="1" />
-      <File FileName="Assets\Code\Base\GameMaster.cs" Line="22" Column="35" />
-      <File FileName="Assets\Code\Base\CoreBehavior.cs" Line="11" Column="1" />
+      <File FileName="Assets\Code\CastleCreationScript.cs" Line="32" Column="2" />
+      <File FileName="Assets\Code\Cannon and CannonBall\CannonControls.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Base\SettingsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Base\GameMaster.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Base\CoreBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Cannon and CannonBall\CannonBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Base\EntityManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Abilities\Damageable.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
