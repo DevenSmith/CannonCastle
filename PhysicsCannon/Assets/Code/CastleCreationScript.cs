@@ -5,16 +5,16 @@ using System.Collections.Generic;
 //used for creating the castle Bricks will be kept at a dimension of 1x1x1 for now
 public class CastleArray
 {
-	public GameObject[] Element;
+	public GameObject[] Elements;
 	
 	public CastleArray(int size)
 	{
-		Element = new GameObject[size];
+		Elements = new GameObject[size];
 	}
 	
 	public void SetSize(int size)
 	{
-		Element = new GameObject[size];
+		Elements = new GameObject[size];
 	}
 }
 
@@ -27,7 +27,7 @@ public class CastleCreationScript : CoreBehavior
 	public int WallHeight = 5;
 	public int WallLength = 10;
 	
-	List<List<CastleArray>> CastleLevels = new List<List<CastleArray>>();
+	List<List<CastleArray>> castleLevels = new List<List<CastleArray>>();
 	
 	
 	// Use this for initialization
@@ -42,9 +42,27 @@ public class CastleCreationScript : CoreBehavior
 				CastleArray CA = new CastleArray(WallLength);
 				CastleElements.Add(CA);
 			}
-			CastleLevels.Add(CastleElements);
+			castleLevels.Add(CastleElements);
 		}
 		
 		//spawn bricks at approriate locations and add to holder
+		
+		for(int i = 0; i < castleLevels.Count; i++)//height
+		{
+			for(int j = 0; j< castleLevels[i].Count; j++) //length
+			{
+				for(int k = 0; k < (castleLevels[i])[j].Elements.Length; k++)
+				{
+					if(k < WallDepth || k >= (WallLength- WallDepth) || j < WallDepth || j >= (WallLength - WallDepth))
+					{
+						Vector3 pos = new Vector3(j, i, k);
+						pos += transform.position;
+						GameObject brick = (GameObject)Instantiate(BrickPrefab, pos, BrickPrefab.transform.rotation);
+						(castleLevels[i])[j].Elements[k] = brick;
+					}
+				}
+			}
+		}
+		
 	}
 }
